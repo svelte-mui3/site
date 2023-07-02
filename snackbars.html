@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<!-- <link rel="stylesheet" type="text/css" href="./fonts/Roboto-Bold.ttf" /> -->
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.53ea2d6f.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/button.8acc11b3.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/ripple.c043fb1d.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/navigation-drawer-item.2b5d32c7.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/icon.1a44d5c4.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/field.f324af6b.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/list-item.734c80cd.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/switch.92701245.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/12.bfad2956.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/example.1d4cd030.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/code.d177b6bf.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.91ef5a79.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.b9a67496.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.2c6d5ce1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.61baa469.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.d79dd230.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.de1b6bff.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/button.53a546aa.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ripple.83ac3a1e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.8fee16d4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/transition.7b703474.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.05c2f6c5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/navigation-drawer-item.7f3cf59b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/icon.629bc55a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/field.9e409bc6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/list-item.522af232.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/switch.69c592c6.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/12.32944887.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/example.c7646941.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/code.92b9ad65.js"><!-- HEAD_svelte-jjbn98_START -->
+		<!-- HTML_TAG_START --><style>::backdrop,:root {--md-sys-color-primary:#6750a4;--md-sys-color-primary-rgb:103 80 164;--md-sys-color-on-primary:#ffffff;--md-sys-color-on-primary-rgb:255 255 255;--md-sys-color-primary-container:#e9ddff;--md-sys-color-primary-container-rgb:233 221 255;--md-sys-color-on-primary-container:#22005d;--md-sys-color-on-primary-container-rgb:34 0 93;--md-sys-color-secondary:#625b71;--md-sys-color-secondary-rgb:98 91 113;--md-sys-color-on-secondary:#ffffff;--md-sys-color-on-secondary-rgb:255 255 255;--md-sys-color-secondary-container:#e8def8;--md-sys-color-secondary-container-rgb:232 222 248;--md-sys-color-on-secondary-container:#1e192b;--md-sys-color-on-secondary-container-rgb:30 25 43;--md-sys-color-tertiary:#7e5260;--md-sys-color-tertiary-rgb:126 82 96;--md-sys-color-on-tertiary:#ffffff;--md-sys-color-on-tertiary-rgb:255 255 255;--md-sys-color-tertiary-container:#ffd9e3;--md-sys-color-tertiary-container-rgb:255 217 227;--md-sys-color-on-tertiary-container:#31101d;--md-sys-color-on-tertiary-container-rgb:49 16 29;--md-sys-color-error:#ba1a1a;--md-sys-color-error-rgb:186 26 26;--md-sys-color-on-error:#ffffff;--md-sys-color-on-error-rgb:255 255 255;--md-sys-color-error-container:#ffdad6;--md-sys-color-error-container-rgb:255 218 214;--md-sys-color-on-error-container:#410002;--md-sys-color-on-error-container-rgb:65 0 2;--md-sys-color-background:#fffbff;--md-sys-color-background-rgb:255 251 255;--md-sys-color-on-background:#1c1b1e;--md-sys-color-on-background-rgb:28 27 30;--md-sys-color-surface:#fffbff;--md-sys-color-surface-rgb:255 251 255;--md-sys-color-on-surface:#1c1b1e;--md-sys-color-on-surface-rgb:28 27 30;--md-sys-color-surface-variant:#e7e0eb;--md-sys-color-surface-variant-rgb:231 224 235;--md-sys-color-on-surface-variant:#49454e;--md-sys-color-on-surface-variant-rgb:73 69 78;--md-sys-color-surface-container-low:#f7f2f7;--md-sys-color-surface-container-low-rgb:247 242 247;--md-sys-color-surface-container-high:#ece7eb;--md-sys-color-surface-container-high-rgb:236 231 235;--md-sys-color-surface-container-highest:#e6e1e6;--md-sys-color-surface-container-highest-rgb:230 225 230;--md-sys-color-outline:#7a757f;--md-sys-color-outline-rgb:122 117 127;--md-sys-color-outline-variant:#cac4cf;--md-sys-color-outline-variant-rgb:202 196 207;--md-sys-color-shadow:#000000;--md-sys-color-shadow-rgb:0 0 0;--md-sys-color-scrim:#000000;--md-sys-color-scrim-rgb:0 0 0;--md-sys-color-inverse-surface:#313033;--md-sys-color-inverse-surface-rgb:49 48 51;--md-sys-color-inverse-on-surface:#f4eff4;--md-sys-color-inverse-on-surface-rgb:244 239 244;--md-sys-color-inverse-primary:#cfbcff;--md-sys-color-inverse-primary-rgb:207 188 255;--md-sys-motion-duration-short1:50ms;--md-sys-motion-duration-short2:100ms;--md-sys-motion-duration-short3:150ms;--md-sys-motion-duration-short4:200ms;--md-sys-motion-duration-medium1:250ms;--md-sys-motion-duration-medium2:300ms;--md-sys-motion-duration-medium3:350ms;--md-sys-motion-duration-medium4:400ms;--md-sys-motion-duration-long1:450ms;--md-sys-motion-duration-long2:500ms;--md-sys-motion-duration-long3:550ms;--md-sys-motion-duration-long4:600ms;--md-sys-motion-duration-extra-long1:700ms;--md-sys-motion-duration-extra-long2:800ms;--md-sys-motion-duration-extra-long3:900ms;--md-sys-motion-duration-extra-long4:1000ms;--md-sys-motion-easing-linear:0,0,1,1;--md-sys-motion-easing-standard:0.2,0,0,1;--md-sys-motion-easing-standard-accelerate:0.3,0,1,1;--md-sys-motion-easing-standard-decelerate:0,0,0,1;--md-sys-motion-easing-emphasized:0.2,0,0,1;--md-sys-motion-easing-emphasized-accelerate:0.3,0,0.8,0.15;--md-sys-motion-easing-emphasized-decelerate:0.05,0.7,0.1,1;--md-sys-motion-easing-legacy:0.4,0,0.2,1;--md-sys-motion-easing-legacy-accelerate:0.4,0,1,1;--md-sys-motion-easing-legacy-decelerate:0,0,0.2,1;}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-jjbn98_END --><!-- HEAD_svelte-1tmfvny_START --><!-- HTML_TAG_START --><style>
+		@media (max-width: 1024px) {
+			.md-drawer.md-drawer-zorufslbi {
+				--md-drawer-is-static: 0!important;
+				--md-drawer-scrim: block!important;
+				--md-drawer-shadow: var(--md-sys-elevation-level2)!important;
+			}
+		}
+	</style><!-- HTML_TAG_END --><!-- HEAD_svelte-1tmfvny_END --><!-- HEAD_svelte-1kwilbi_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/.hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-1kwilbi_END --><!-- HEAD_svelte-1kwilbi_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/.hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-1kwilbi_END --><!-- HEAD_svelte-1tmfvny_START --><!-- HTML_TAG_START --><style>
+		@media (max-width: 100000px) {
+			.md-drawer.md-drawer-by50wjg0b {
+				--md-drawer-is-static: 0!important;
+				--md-drawer-scrim: block!important;
+				--md-drawer-shadow: var(--md-sys-elevation-level2)!important;
+			}
+		}
+	</style><!-- HTML_TAG_END --><!-- HEAD_svelte-1tmfvny_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+
+
+
+<div class="md-navigation-drawer svelte-jxockb">
+
+	
+
+
+
+<div class="md-drawer md-drawer-zorufslbi svelte-xwyl3n open modal" style="--md-drawer-modal-scrim-opacity: 0.32; --md-drawer-modal-direction: -1; --md-drawer-modal-width: 320px; --md-drawer-is-open: 1; --md-drawer-modal-in-duration: 300ms; --md-drawer-modal-in-delay: 0ms; --md-drawer-modal-in-bezier: 0.2,0,0,1; --md-drawer-modal-out-duration: 300ms; --md-drawer-modal-out-delay: 0ms; --md-drawer-modal-out-bezier: 0.2,0,0,1;"><div class="panel svelte-xwyl3n"></div>
+	<button class="scrim svelte-xwyl3n"></button>
+
+	<div class="sheet svelte-xwyl3n"><div class="sheet svelte-jxockb  open">
+				<div class="md-navigation-drawer-title svelte-heo2n">Components
+</div>
+			
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/icons">Icons
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/buttons">Buttons
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/fabs">FABs
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/switches">Switches
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/fields">Fields
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/tabs">Tabs
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/badge">Badge
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/progress">Progress
+	
+</a>
+			<a class="md-navigation-drawer-item active svelte-1bh77oe" active href="/snackbars">Snackbars
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/ripple">Ripple
+	
+</a>
+			<a class="md-navigation-drawer-item  svelte-1bh77oe" active="false" href="/lists">Lists
+	
+</a>
+		</div></div>
+
+	
+</div>
+
+	<div class="md-side-sheet svelte-13g3j6u"><div class="app svelte-zuyglu"><div class="bar svelte-zuyglu"><div class="icon-menu svelte-zuyglu"><button data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " style=""><span class="md-icon"><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div>
+					<div class="config svelte-zuyglu"><label data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " style=""><input type="checkbox">
+							<span class="md-icon"><svg viewBox="0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"></path><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"></path></g></svg></span></label></div></div>
+				<main class="svelte-zuyglu"><div class="example svelte-2neu7c"><h1 class="headline svelte-2neu7c">Snackbars</h1>
+
+	
+
+	
+
+	<div class="main svelte-2neu7c"><div class="content svelte-2neu7c">
+
+<div class="code svelte-pqdcl8"><h3>Simple</h3>
+	<div class="md-card-outlined"><div class="component svelte-pqdcl8"><div class="layout svelte-te859q"><div class="md-snackbar"><span class="md-snackbar-text">Single-line snackbar
+    </span>
+		</div>
+    
+    <div class="md-snackbar"><span class="md-snackbar-text">Single-line snackbar with close affordance
+        </span>
+		<span class="md-snackbar-action">
+				<button data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " slot="icon" style=""><span class="md-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button></span></div>
+
+    <div class="md-snackbar"><span class="md-snackbar-text">Single-line snackbar with action
+        </span>
+		<span class="md-snackbar-action"><button data-testid="mui3-button" class="md-button     md-button-text   " slot="action" style="">Action</button>
+				</span></div>
+
+    <div class="md-snackbar"><span class="md-snackbar-text">Single-line snackbar with action
+        </span>
+		<span class="md-snackbar-action"><button data-testid="mui3-button" class="md-button     md-button-text   " slot="action" style="">Action</button>
+				<button data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " slot="icon" style=""><span class="md-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button></span></div>
+
+    <div class="md-snackbar"><span class="md-snackbar-text">Two-line snackbar <br> without action
+    </span>
+		</div>
+
+    <div class="md-snackbar"><span class="md-snackbar-text">Two-line snackbar with <br> close affordance
+        </span>
+		<span class="md-snackbar-action">
+				<button data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " slot="icon" style=""><span class="md-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button></span></div>
+
+    <div class="md-snackbar"><span class="md-snackbar-text">Two-line snackbar <br>with action
+        </span>
+		<span class="md-snackbar-action"><button data-testid="mui3-button" class="md-button     md-button-text   " slot="action" style="">Action</button>
+				</span></div>
+
+    <div class="md-snackbar"><span class="md-snackbar-text">Two-line snackbar with <br> action and close affordance
+        </span>
+		<span class="md-snackbar-action"><button data-testid="mui3-button" class="md-button     md-button-text   " slot="action" style="">Action</button>
+				<button data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " slot="icon" style=""><span class="md-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button></span></div>
+    <div class="md-snackbar   md-snackbar-vertical"><span class="md-snackbar-text">Two-line snackbar with <br> longer action
+        </span>
+		<span class="md-snackbar-action"><button data-testid="mui3-button" class="md-button     md-button-text   " slot="action" style="">Longer Action</button>
+				</span></div>
+
+    <div class="md-snackbar   md-snackbar-vertical"><span class="md-snackbar-text">Two-line snackbar with longer <br> action and close affordance
+        </span>
+		<span class="md-snackbar-action"><button data-testid="mui3-button" class="md-button     md-button-text   " slot="action" style="">Longer Action</button>
+				<button data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " slot="icon" style=""><span class="md-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button></span></div>
+</div></div>
+		<div class="md-card-action svelte-wcm0c7">
+			<label data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " style=""><input type="checkbox">
+				<span class="md-icon"><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg></span></label>
+</div>
+		</div>
+</div>
+	
+
+<div class="code svelte-pqdcl8"><h3>Manager</h3>
+	<div class="md-card-outlined"><div class="component svelte-pqdcl8"><div class="layout svelte-3gk73s"><button data-testid="mui3-button" class="md-button md-button-primary       " style="">First</button>
+    <button data-testid="mui3-button" class="md-button md-button-primary       " style="">Second</button>
+    <button data-testid="mui3-button" class="md-button md-button-primary       " style="">Third</button>
+    <button data-testid="mui3-button" class="md-button md-button-primary       " style="">Clear</button>
+
+    <div class="message svelte-3gk73s">
+
+</div>
+</div></div>
+		<div class="md-card-action svelte-wcm0c7">
+			<label data-testid="mui3-button" class="md-button     md-button-text md-button-icon  " style=""><input type="checkbox">
+				<span class="md-icon"><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg></span></label>
+</div>
+		</div>
+</div></div>
+		</div>
+</div></main></div>
+	
+
+
+
+<div class="md-drawer md-drawer-by50wjg0b svelte-xwyl3n  modal right" style="--md-drawer-modal-scrim-opacity: 0.32; --md-drawer-modal-direction: 1; --md-drawer-modal-width: 320px; --md-drawer-is-open: 0; --md-drawer-modal-in-duration: 350ms; --md-drawer-modal-in-delay: 0ms; --md-drawer-modal-in-bezier: 0.2,0,0,1; --md-drawer-modal-out-duration: 350ms; --md-drawer-modal-out-delay: 0ms; --md-drawer-modal-out-bezier: 0.2,0,0,1;">
+	
+
+	
+
+	<div class="panel svelte-xwyl3n"></div>
+</div>
+	
+</div>
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_8ta6r4 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":{color:"#6750A4",dark:false,ripple:true,duration:50,open:true},"uses":{}},null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.91ef5a79.js"),
+						import("./_app/immutable/entry/app.d79dd230.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 12],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
